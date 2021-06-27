@@ -13,7 +13,6 @@ $(document).ready(function(){
             var num = Math.round(Math.random() * (8 - 1) + 1)
             newArr.push(`assets/img/imagen-${num}.jpeg`);
             $('#picture').append( `<li><img src="assets/img/imagen-${num}.jpeg"/></li>` );   
-
         }
         return newArr;
     }
@@ -24,8 +23,7 @@ $(document).ready(function(){
 
     $('.button').click(function(e){
         e.preventDefault();
-        randomImg()
-        console.log('Despues-->',newArr);
+        randomImg();
     })
     
 
